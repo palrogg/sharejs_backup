@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+header, #indexstory, .modal-surtitre, .img_top_container{
+	display: none;
+}
+p.space{
+	margin-top: 0;
+}
+div.in{
+	display: block !important;
+	border: 1px solid red;
+	margin: 0;
+	padding: 0;
+	overflow: visible !important;
+	overflow-y: visible !important;
+}
+.modal-dialog{
+	width: 100%;
+}

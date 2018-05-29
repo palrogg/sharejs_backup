@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/share-button.min.css">
+      <style type="text/css">
+      share-button {
+        margin-left: 20%; /* a enlever, just pour la page d’exemple */
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        background: none;
+        border-radius: 5px;
+        color: #307EC3;
+        cursor: pointer;
+        font-size: 15px;
+        padding-top: 10px;
+      }
+      share-button:hover {
+        background: none;
+      }
+      share-button::before{
+        bottom: .4em;
+      }
+      </style>
+   </head>
+   <body>
+     <share-button class=".share-button"></share-button>
+     <script type="text/javascript" src="js/share-button.min.js"></script>
+     <script>
+        /* http://sharebutton.co
+        La doc: https://github.com/carrot/share-button
+        La config: https://github.com/carrot/share-button/blob/master/docs/configuration-options.md */
+        var share_button_right = new ShareButton({
+          title: "Un exemple de titre – tdg.ch", /*Titre à utiliser pour le partage */
+          ui: {
+            flyout: "bottom center", /*Gestion de l'ouverture */
+            buttonText: "Partager" /*Nom du bouton*/
+          },
+          networks: {
+            facebook: {
+            },
+            email: {
+              enabled: false
+            },
+            pinterest: {
+              enabled: false
+            },
+            reddit: {
+              enabled: false
+            }
+          }
+        });
+     </script>
+     <!-- Social Button-->
+   </body>
+</html>
